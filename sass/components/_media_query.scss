@@ -1,0 +1,65 @@
+/* stylelint-disable */
+@media (max-width: 750px) {
+
+
+// mobile menu
+
+  .top__menu--wrapper {
+    display: none;
+  }
+
+  section.sidebar {
+    width: 100%;
+    height: auto;
+  }
+
+  .navigation-title-wrapper {
+    justify-content: space-around;
+  }
+
+  .navigation__wrapper-mobile {
+    display: none;
+  }
+  .navigation__wrapper-mobile.active {
+    display: block;
+    position: fixed;
+    height: 100%;
+    background-color: $color-dark;
+    z-index: 1;
+    line-height: 0;
+
+    ul {
+      margin-bottom: 40px;
+    }
+  }
+
+  //general page
+  section.page__container {
+    width: 100%;
+    left: 0;
+    margin-top: 25px;
+  }
+
+  .page-dates  {
+    flex-wrap: wrap;
+
+    .reload-btn {
+      margin-top: 5px;
+    }
+  }
+
+  .page-chart {
+    tr {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  // links
+
+  .table-links {
+    tr {
+      flex-wrap: wrap;
+    }
+  }
+}

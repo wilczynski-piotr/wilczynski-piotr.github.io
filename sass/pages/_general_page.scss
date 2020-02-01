@@ -1,0 +1,83 @@
+/* stylelint-disable */
+.main__page-container {
+  background-color: $color-light;
+}
+
+.page-header {
+  border-bottom: solid 2px $page-background;
+
+  h2.page-title {
+    font-family: $paragraph-font;
+    color: $color-navbar-items;
+    font-size: 23px;
+    padding: 12px;
+  }
+}
+
+.page-dates {
+  @include flex-center;
+  padding: 35px;
+  border-bottom: 1px solid $page-background;
+}
+
+.page-dates.table {
+  height: 40px;
+  border: 1px solid $page-background;
+  padding: 5px;
+  border-radius: 3px;
+  display: flex;
+  align-content: center;
+
+  tr {
+    .date {
+      align-content: center;
+      padding-left: 20px;
+      padding-right: 40px;
+      border-right: 1px solid $page-background;
+    }
+
+    .icon {
+      color: $page-background;
+    }
+  }
+}
+
+.reload-btn {
+  @include orange-button;
+  width: 40px;
+}
+
+.reload-btn:hover {
+  @include orange-button-hover;
+}
+
+
+//chart
+
+.page-chart {
+  table {
+    border-spacing: 25px;
+    margin: 0 auto;
+    width: 70%;
+
+    tr {
+      td {
+        position: relative;
+        padding: 0;
+        border-bottom: 3px solid $page-background;
+        width: auto;
+
+        h3, p {
+          display: inline;
+          font-family: $paragraph-font;
+          color: $color-navbar-items;
+        }
+        p {
+          position: absolute;
+          right: 0;
+          margin: 0;
+        }
+      }
+    }
+  }
+}

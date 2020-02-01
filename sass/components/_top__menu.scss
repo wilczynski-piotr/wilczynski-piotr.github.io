@@ -1,0 +1,27 @@
+.top__menu--wrapper {
+  position: fixed;
+  width: calc(100% - 240px);
+  height: 50px;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  background-color: $color-light;
+}
+
+.top__menu {
+  display: flex;
+  justify-content: flex-end;
+  width: auto;
+
+  h3, p {
+    margin: 0 10px;
+  }
+}
+
+.top__menu-icon {
+  display: flex;
+  align-items: baseline;
+  border-left: 1px solid $page-background;
+  padding: 10px 20px 0 20px;
+}
